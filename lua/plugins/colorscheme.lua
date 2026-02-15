@@ -6,18 +6,23 @@ return {
 		"Everblush/nvim",
 		name = "everblush",
 		opts = {
-			transparent_background = false,
+			transparent_background = true,
 			nvim_tree = {
 				contrast = false,
 			},
 		},
 	},
 
+	{
+		"olimorris/onedarkpro.nvim",
+		priority = 1000,
+		lazy = false,
+	},
 	-- Configure LazyVim to load gruvbox
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "everblush",
+			colorscheme = "vaporwave",
 		},
 	},
 
@@ -29,7 +34,7 @@ return {
 
 	{
 		"catppuccin/nvim",
-		lazy = true,
+		lazy = false,
 		name = "catppuccin",
 		opts = {
 			lsp_styles = {
