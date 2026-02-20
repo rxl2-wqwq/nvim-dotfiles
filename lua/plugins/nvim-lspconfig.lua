@@ -130,11 +130,21 @@ return {
 							},
 						},
 					},
-					cssls = {},
-					jdtls = {
-						root_dir = function(fname)
-							return vim.fn.getcwd()
-						end,
+				},
+				cssls = {},
+				jdtls = {
+					root_dir = function(fname)
+						return vim.fn.getcwd()
+					end,
+				},
+				harper_ls = {
+					filetypes = { "markdown", "text", "gitcommit" },
+					settings = {
+						["harper-ls"] = {
+							lint = {
+								comments = false,
+							},
+						},
 					},
 				},
 			},
