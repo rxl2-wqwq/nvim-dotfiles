@@ -132,20 +132,9 @@ return {
 					},
 				},
 				cssls = {},
-				jdtls = {
-					root_dir = function(fname)
-						return vim.fn.getcwd()
-					end,
-				},
+				jdtls = {},
 				harper_ls = {
 					filetypes = { "markdown", "text", "gitcommit" },
-					settings = {
-						["harper-ls"] = {
-							lint = {
-								comments = false,
-							},
-						},
-					},
 				},
 			},
 			-- you can do any additional lsp server setup here
