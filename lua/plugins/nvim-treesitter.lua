@@ -28,6 +28,7 @@ return {
 			"bash",
 			"c",
 			"cpp",
+			"cmake",
 			"diff",
 			"html",
 			"javascript",

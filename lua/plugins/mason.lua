@@ -12,6 +12,10 @@ return {
 			"java-debug-adapter",
 			"java-test",
 			"jdtls",
+			"clangd",
+			"clang-format",
+			"codelldb",
+			"harper-ls",
 		},
 	},
 	---@param opts MasonSettings | {ensure_installed: string[]}

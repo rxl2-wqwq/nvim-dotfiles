@@ -99,6 +99,7 @@ return {
               desc = "Prev Reference", enabled = function() return Snacks.words.is_enabled() end },
           },
 				},
+
 				stylua = { enabled = false },
 				lua_ls = {
 					-- mason = false, -- set to false if you don't want this server to be installed with mason
@@ -135,6 +136,21 @@ return {
 				jdtls = {},
 				harper_ls = {
 					filetypes = { "markdown", "text", "gitcommit" },
+				},
+				clangd = {
+					cmd = {
+						"clangd",
+						"--background-index",
+						-- "--clang-tidy",
+						"--header-insertion=iwyu",
+						"--completion-style=detailed",
+						"--fallback-style=llvm",
+					},
+					init_options = {
+						usePlaceholders = true,
+						completeUnimported = true,
+						clangdFileStatus = true,
+					},
 				},
 			},
 			-- you can do any additional lsp server setup here
